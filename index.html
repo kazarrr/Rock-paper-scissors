@@ -8,6 +8,7 @@
 </head>
 <body>
   <script>
+    // This part is to program the computer's selection
     function getComputerChoice(){
        let rand = Math.random();
        if (rand < 0.33){
@@ -21,6 +22,8 @@
        }
     }
         getComputerChoice()
+
+    //This code shows condition for win, lose or draw
     function playRound(playerSelection, computerSelection){
         if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
             return 'You win! Rock beats Scissors';
@@ -40,7 +43,7 @@
 
     }
         
-    
+    //This code is for the final result of the game 
    function game(){
     let playerWins = 0;
     let computerWins = 0;
